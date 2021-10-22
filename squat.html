@@ -49,8 +49,8 @@
                 }
         </style>
 	<div class="container text-center">
-		<h1>AI 운동 도우미</h1>
-		<p class="lead">
+		<h1 id="delete">AI 운동 도우미</h1>
+		<p class="lead" id="delete">
 			티처블 머신러닝을 기반으로 한 AI 운동 도우미<br>
 			 스쿼트 7개
 		</p>
@@ -58,9 +58,9 @@
 			<a href="squat.html" class="btn btn-default"> 스쿼트</a> or 
 			<a href="lunge.html" class="btn btn-success"> 런지</a>
 		</p>
-        <div>Teachable Machine Pose Model</div>
-<button type="button" onclick="init()" class="btn btn-secondary" id="deletebutton">Start</button>
-<br>
+        <div id="delete">Teachable Machine Pose Model</div>
+<button type="button" onclick="init()" class="btn btn-secondary" id="delete">Start</button>
+<br id="delete">
 <div id="case">
 <div><canvas id="canvas"></canvas></div>
 </div>
@@ -76,7 +76,7 @@
     let model, webcam, ctx, labelContainer, maxPredictions;
 
     async function init() {
-        document.getElementById("deletebutton").remove();
+        document.querySelectorAll("#delete").forEach(x=>x.delete());
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
