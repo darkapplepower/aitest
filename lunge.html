@@ -59,7 +59,7 @@
 			<a href="lunge.html" class="btn btn-success"> 런지</a>
 		</p>
 		<div>Teachable Machine Pose Model</div>
-<button type="button" onclick="init()" class="bten btn-secondary">Start</button>
+<button type="button" onclick="init()" class="bten btn-secondary" id="deletebutton">Start</button>
 <br>
 <div id="case">
         <div><canvas id="canvas"></canvas></div>
@@ -76,6 +76,7 @@
     let model, webcam, ctx, labelContainer, maxPredictions;
 
     async function init() {
+        document.getElementById("deletebutton").remove();
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
