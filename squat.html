@@ -46,7 +46,7 @@
         </style>
 <!-- BEGIN HERO
 ================================================== -->
-<div class="section-hero">
+<div class="section-hero" id="smaller">
         
 	<div class="container text-center">
 		<h1 id="delete">AI 운동 도우미</h1>
@@ -77,7 +77,7 @@
 
     async function init() {
         document.querySelectorAll("#delete").forEach(x=>x.remove());
-        document.getElementsByClassName("section-hero").style.padding="30px 0px 0px";
+        document.getElementById("smaller").style.padding="30px 0px 0px";
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
 
