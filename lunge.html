@@ -53,10 +53,12 @@
                         display: inline-block;
                         color: black;
                 }
+                .outerp> * {
+                        position: absolute;
+                }
                 .innerp {
                         width: 0%;
                         height: 1.2em;
-                        position: absolute;
                         border-radius: 3px;
                 }
         </style>
@@ -81,15 +83,15 @@
         </div>
 <div id="label-container" style="text-align: center;" width="100%">
         <div class="outerp">
-                stand
+                <p>stand</p>
                 <div class="innerp" id="stand" style="background-color: greenyellow;"></div>
         </div>
         <div class="outerp">
-                squat
+                <p>squat</p>
                 <div class="innerp" id="squat" style="background-color: hotpink;"></div>
         </div>
         <div class="outerp">
-                bent
+                <p>bent</p>
                 <div class="innerp" id="bent" style="background-color: red;"></div>
         </div>
 </div>
