@@ -57,6 +57,7 @@
                         width: 0%;
                         height: 1.2em;
                         border-radius: 3px;
+                        text-align: right;
                 }
         </style>
 <!-- BEGIN HERO
@@ -148,7 +149,7 @@
         const prediction = await model.predict(posenetOutput);
         const divs=document.getElementsByClassName("innerp");
         for (let i = 0; i < maxPredictions; i++) {
-            divs[i].style.width=`${prediction[i].probability*100}%`;
+                divs[i].style.width=`${prediction[i].probability*100}%`;
         }
 
         // finally draw the poses
