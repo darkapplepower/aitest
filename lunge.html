@@ -58,15 +58,6 @@
                         position: absolute;
                         border-radius: 3px;
                 }
-                #stand {
-                        background-color: blue;
-                }
-                #squat {
-                        background-color: red;
-                }
-                #bent {
-                        background-color: greenyellow;
-                }
         </style>
 <!-- BEGIN HERO
 ================================================== -->
@@ -89,13 +80,13 @@
         </div>
 <div id="label-container" style="text-align: center;" width="100%">
         <div class="outerp">
-                <div class="innerp" id="stand"></div>
+                <div class="innerp" id="stand" style="background-color: greenyellow;"></div>
         </div>
         <div class="outerp">
-                <div class="innerp" id="squat"></div>
+                <div class="innerp" id="squat" style="background-color: hotpink;"></div>
         </div>
         <div class="outerp">
-                <div class="innerp" id="bent"></div>
+                <div class="innerp" id="bent" style="background-color: red;"></div>
         </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
