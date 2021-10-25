@@ -158,6 +158,8 @@
         } else if(prediction[2].probability.toFixed(2)>0.95){
             stauts = "bent";
         }
+        
+        const divs=document.getElementsByClassName("innerp");
         for (let i = 0; i < maxPredictions; i++) {
                 divs[i].style.width=`${prediction[i].probability*100}%`;
         }
